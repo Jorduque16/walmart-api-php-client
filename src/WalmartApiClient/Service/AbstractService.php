@@ -118,7 +118,7 @@ abstract class AbstractService
      */
     protected function getEntity($uri, $constraints = [])
     {
-        $response = $this->transportService->callApi($uri, $constraints);
+        $response = $this->transportService->callApi($uri."&richAttributes=true", $constraints);
 
         return $this->entityFactory->instance(static::ENTITY_CLASS, $response);
     }

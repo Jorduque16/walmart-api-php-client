@@ -27,7 +27,7 @@ class ProductService extends AbstractService implements ProductServiceInterface
     {
         $this->guardInt($itemId);
 
-        return $this->getEntity('items/' . $itemId);
+        return $this->getEntity('items/' . $itemId . '&richAttributes=true');
     }
 
 

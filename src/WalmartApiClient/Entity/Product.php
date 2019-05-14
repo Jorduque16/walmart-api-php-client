@@ -291,12 +291,19 @@ class Product extends AbstractEntity implements ProductInterface
      */
     private $attributes;
 
+    private $weight;
+
     /**
      * @return int
      */
     public function getItemId()
     {
         return $this->itemId;
+    }
+
+    public function getWeight()
+    {
+        return $this->weight;
     }
 
 
@@ -306,6 +313,11 @@ class Product extends AbstractEntity implements ProductInterface
     public function setItemId($itemId)
     {
         $this->itemId = $itemId;
+    }
+
+    public function setWeight($weight)
+    {
+        $this->weight = $weight;
     }
 
 

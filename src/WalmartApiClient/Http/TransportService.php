@@ -96,7 +96,7 @@ class TransportService implements TransportServiceInterface
         }
 
         $queryString = empty($constraints) ? '' : '?' . http_build_query($constraints);
-        $requestUrl  = $this->apiBaseUrl . $uri . $queryString;
+        $requestUrl  = $this->apiBaseUrl . $uri . $queryString . '&richAttributes=true';
 
         return $requestUrl;
     }
