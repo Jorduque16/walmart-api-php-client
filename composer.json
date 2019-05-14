@@ -1,5 +1,5 @@
 {
-    "name": "jorduque16/walmart-api-php-client",
+    "name": "gadoma/walmart-api-php-client",
     "type": "library",
     "license": "MIT",
     "description": "Walmart Open API PHP client",
